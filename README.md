@@ -1,3 +1,3 @@
 # bamazon
 
-![bamazon running](Capture.png)
+![bamazon running](https://github.com/JustinHo97/bamazon/blob/master/Capture.PNG)
