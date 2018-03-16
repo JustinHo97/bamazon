@@ -59,7 +59,7 @@ function promptShop(choiceArr, response) {
             connection.query(
                 `UPDATE products SET stock_quantity=${response[input.product].stock_quantity - input.amount} WHERE item_id=${response[input.product].item_id};`, function (err, res) {
                     if (err) throw err;
-                    console.log(`You bought ${input.amount} ${response[input.product].product_name} for $${input.amount * response[input.product].price}\r\n`)
+                    console.log(`You bought ${input.amount} ${response[input.product].product_name} for $${(input.amount * response[input.product].price).toFixed(2)}\r\n`)
                     checkShop();
                 }
             )
